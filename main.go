@@ -1,8 +1,10 @@
 package main
 
 func main() {
-	cards := deck{"Ace of Diamonds"}
-	cards = append(cards, "Six of Spades")
+	cards := newDeck()
 
-	cards.print()
+	cards.saveToFile("myCards")
+	// hand, remainingDeck := deal(cards, 10)
+	// remainingDeck.print()
+	// hand.print()
 }
